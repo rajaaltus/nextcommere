@@ -6,7 +6,7 @@ type Props = {
 };
 const ShopLayout = ({ children }: Props) => {
   return (
-    <div className="w-full min-h-screen">
+    <div className="w-full h-auto pb-6">
       <Categories />
       {children}
     </div>

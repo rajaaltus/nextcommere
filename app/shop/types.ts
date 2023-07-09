@@ -1,21 +1,8 @@
-export type Category = {
+export type Product = {
   id: number;
-  name: string;
-  created_at: string;
-  updated_at: string;
-  isactive: boolean;
-  image: any;
-  dishes: any[];
-};
-
-export type Dish = {
-  id: number;
-  name: string;
+  title: string;
+  price: string;
+  category: string;
   description: string;
-  price: number;
-  created_at: string;
-  updated_at: string;
-  isactive: boolean;
-  image: any;
-  category: Category;
+  image: string;
 };

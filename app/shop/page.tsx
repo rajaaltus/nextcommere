@@ -1,19 +1,18 @@
 import React from "react";
-import { Dish } from "./types";
-import DishCard from "./DishCard";
-const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
+import { Product } from "./types";
+import ProductCard from "./ProductCard";
 
-async function getDishes() {
-  const res = await fetch(`${process.env.API_URL}/dishes`);
+async function getProducts() {
+  const res = await fetch(`${process.env.API_URL}/products`);
   const data = await res.json();
   return data;
 }
 const ShopPage = async () => {
-  const dishes = await getDishes();
+  const products = await getProducts();
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-8">
-      {dishes.map((dish: Dish) => (
-        <DishCard dish={dish} key={dish.id} />
+      {products.map((product: Product) => (
+        <ProductCard product={product} key={product.id} />
       ))}
     </div>
   );

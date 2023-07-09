@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 const Header = () => {
   const pathname = usePathname();
   return (
-    <div className="w-full max-w-7xl mx-auto flex items-center justify-start h-20  border border-gray-700 px-8 mt-8 rounded-2xl">
+    <div className="sticky top-8 w-full max-w-7xl mx-auto flex items-center justify-start h-16  border border-gray-700 px-8 mt-8 rounded-2xl">
       <ul className="flex items-center justify-start space-x-8">
         <li
           className={`${

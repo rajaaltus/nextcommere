@@ -11,7 +11,7 @@ const CategoryItem = ({ name }: Props) => {
   };
   return (
     <div
-      className="px-4 py-2 border border-gray-700 rounded-full hover:border-gray-500 hover:bg-gray-700 duration-200 cursor-pointer"
+      className="px-4 py-2 border border-gray-700 rounded-full hover:border-gray-500 hover:bg-gray-700 duration-200 cursor-pointer capitalize"
       onClick={() => handleClick(name)}
     >
       {name}
